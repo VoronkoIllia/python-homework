@@ -8,6 +8,6 @@ while N <= 0:
 
 array = []
 for index in range(N):
-    array.append(index if index < 2 else array[index-2]+array[index-1]) 
+    array.append(array[index-2] + array[index-1] if index > 1 else 1) 
 
 print(array)
