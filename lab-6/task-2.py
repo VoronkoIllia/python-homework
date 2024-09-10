@@ -14,13 +14,13 @@ def quick_sort(array):
     return quick_sort(left) + center + quick_sort(right)
 
 def quick_sort_demonstration():
-    list_size = int(input("Введіть розмір масиву: "))
+    list_size = int(input("Введіть розмір списку: "))
     list = [random.randint(1,1000) for i in range(list_size)]
 
-    print("Масив до сортування: ")
+    print("Список до сортування: ")
     print(list)
 
-    print("Масив після сортування: ")
+    print("Список після сортування: ")
     print(quick_sort(list))
 
     return

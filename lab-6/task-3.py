@@ -16,7 +16,7 @@ def get_fibonacci_set(end_value):
 def fibonacci_count():
     set_of_numbers = set(range(1,51))
     set_of_fibonacci = get_fibonacci_set(50)
-    print(len(set_of_numbers & set_of_fibonacci))
+    print("Кількість чисел у множині, що є числами Фібоначчі: ",len(set_of_numbers & set_of_fibonacci))
 
     return
 
