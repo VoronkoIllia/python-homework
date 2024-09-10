@@ -5,8 +5,9 @@ while N <= 0:
     print("Розмір масиву має бути більше нуля")
     N = int(input("Введіть розмір масиву: "))
 
-list = []
-for index in range(N):
-    list.append(index if index < 2 else list[index-2]+list[index-1]) 
 
-print(list)
+array = []
+for index in range(N):
+    array.append(index if index < 2 else array[index-2]+array[index-1]) 
+
+print(array)
