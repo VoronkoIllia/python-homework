@@ -21,8 +21,8 @@ file2_name = "TF1_2.txt"
 file1_w = Open(file1_name, "w")
 if file1_w != None:
     
-    file1_w.write("Реве та стогне Дніпр широкий,\n")
-    file1_w.write("Сердитий вітер завива.")
+    file1_w.write("Happiness is not by chance, but by choice\n")
+    file1_w.write("Sometimes you win, sometimes you learn.")
     
     print("Information was successfully added to "+file1_name)
     
