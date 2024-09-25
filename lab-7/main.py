@@ -1,10 +1,16 @@
 def add_command(commands, command_name, command_score):
-    commands[command_name] = command_score
-    print(f"Додано {command_name}.")
+    if command_name in commands:
+        print(f"Команда {command_name} вже є в списку.")
+    else:
+        commands[command_name] = command_score
+        print(f"Додано {command_name}.")
 
 def delete_command(commands, command_name):
-    del commands[command_name]
-    print(f"Видалено {command_name}.")
+    if command_name in commands:
+        del commands[command_name]
+        print(f"Видалено {command_name}.")
+    else:
+        print(f"Команда {command_name} відсутня в списку.")
 
 def print_commands(commands):
     for command in commands:
@@ -50,7 +56,6 @@ commands = {
     "mousesports": 6,
     "fnatic":4,
 }
-
 
 while True:
     
